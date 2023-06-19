@@ -9,14 +9,14 @@ body {
 }
 
 .title {
-  font-size: 7vw;
+  font-size: clamp(2rem, 7vw, 4rem);
   margin: 10px auto 5rem;
   text-align: center;
 }
 
 .choices {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 70%;
   margin: auto;
