@@ -1,12 +1,62 @@
-.title{
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    margin: 10px;
-    text-align: center;
-    font-family: fantasy;
+body {
+  height: 100%;
+  background: linear-gradient(#0085FF, #000000);
+  padding-block: 3vw;
+  font-family: "Zilla Slab";
+  color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-body{
-    background: linear-gradient(to right, red, blue);
+.title {
+  font-size: 7vw;
+  margin: 10px auto 5rem;
+  text-align: center;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.choice {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10%;
+  width: 30vw;
+  height: 30vw;
+  max-width: 200px;
+  max-height: 235px;
+  margin: 1.7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 5vw;
+  cursor: pointer;
+  transition: transform ease-in-out 0.15s;
+  padding: 3vw;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+}
+
+.choice img {
+  height: 17vw;
+  width: 17vw;
+  border-radius: 50%;
+  margin: 1vw;
+  max-width: 70%;
+  max-height: 60%;
+}
+
+.choice p {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 1vw;
+  font-size: clamp(1rem, 4vw, 2rem);
+  white-space: nowrap;
 }
